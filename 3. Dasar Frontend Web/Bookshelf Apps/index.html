@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+   <div class="site-title">
+       <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 35 38" fill="none">
+           <path d="M17.5 17.9524C14.0622 14.7567 9.71778 12.5197 4.88222 11.655C2.59667 11.2602 0.5 13.0648 0.5 15.377V27.1072C0.5 30.2653 1.86 31.9196 3.73 32.164C8.45222 32.7655 12.74 34.7017 16.2533 37.5591C16.9144 38.1042 17.9911 38.1606 18.6522 37.6343C22.1844 34.7581 26.51 32.7843 31.27 32.1828C33.0456 31.9384 34.5 30.1901 34.5 28.3855V15.377C34.5 13.0648 32.4033 11.2602 30.1178 11.655C25.2822 12.5197 20.9378 14.7567 17.5 17.9524ZM17.5 11.279C20.6356 11.279 23.1667 8.76002 23.1667 5.6395C23.1667 2.51898 20.6356 0 17.5 0C14.3644 0 11.8333 2.51898 11.8333 5.6395C11.8333 8.76002 14.3644 11.279 17.5 11.279Z" fill="white"/>
+       </svg>
+       <h1>Bookshelf Apps</h1>
+   </div>
+</header>
+
+<main class="main">
+    <aside>
+        <div class="sidebar">
+            <form class="search-book" id="search">
+                <div class="search">
+                    <label for="searchTitle">Cari buku</label>
+                    <div class="search-submit">
+                        <input id="searchTitle" placeholder="Masukan judul buku"/>
+                        <button type="submit">Cari</button>
+                    </div>
+                </div>
+                <div id="searchedBook" class="book-list">
+
+                </div>
+            </form>
+            <form class="add-book" id="form">
+                <h2>Masukan Buku</h2>
+                <div class="input-book">
+                    <label for="judul">Judul</label>
+                    <input name="judul" id="judul" placeholder="Masukan judul buku" required />
+                </div>
+                <div class="input-book">
+                    <label for="penulis">Penulis</label>
+                    <input name="penulis" id="penulis" placeholder="Masukan nama penulis" required />
+                </div>
+                <div class="input-book">
+                    <label for="tahun">Tahun</label>
+                    <input type="number" name="tahun" id="tahun" placeholder="Masukan tahun terbit, contoh: 2023" min="0" max="2023" required />
+                </div>
+                <div class="checkbox">
+                    <label for="dibaca">Selesai dibaca</label>
+                    <input name="sudah dibaca" id="dibaca" type="checkbox" />
+                </div>
+                <button type="submit" class="btn">Masukan Buku ke <b>rak selesai dibaca</b></button>
+            </form>
+        </div>
+    </aside>
+    <div class="content">
+        <div class="book-wrapper">
+            <h2>Belum selesai dibaca</h2>
+            <div class="book-list" id="unread">
+
+            </div>
+        </div>
+        <div class="book-wrapper">
+            <h2>Selesai dibaca</h2>
+            <div class="book-list" id="read">
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Copyrigth 2023, made by love from Ilham Maulana Pratama</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
